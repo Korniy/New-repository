@@ -20,28 +20,97 @@ body {
   font-family: var(--main-font);
   color: var(--main-text-color);
 }
-ul {
+
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
   list-style: none;
 }
+
 a {
   text-decoration: none;
+  color: inherit;
 }
+
 span {
   color: var(--accent-text-color);
 }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .title {
+  margin-bottom: 50px;
+
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Шапка */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-flex {
+  display: flex;
+  align-items: center;
+}
 .header-link {
   color: var(--main-text-color);
   font-family: var(--second-font);
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
+}
+.nav {
+  margin-left: 93px;
+}
+.nav-list {
+  display: flex;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 .nav-link {
   color: var(--main-text-color);
@@ -52,6 +121,13 @@ span {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-text-color);
+}
+.header-list {
+  display: flex;
+  margin-left: auto;
+}
+.header-list-item:not(:last-child) {
+  margin-right: 50px;
 }
 .header-list-link {
   color: var(--second-text-color);
@@ -66,9 +142,14 @@ span {
 
 /* Hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: var(--background-color);
 }
 .hero-title {
+  margin-bottom: 30px;
+
   color: var(--white-text-color);
   text-align: center;
   font-size: 44px;
@@ -78,21 +159,46 @@ span {
   text-transform: uppercase;
 }
 .hero-btn {
+  display: inline-block;
+  min-width: 216px;
+  min-height: 50px;
+  padding: 8px 29px;
+
   color: var(--white-text-color);
-  background-color: var(--accent-text-color);
   font-family: var(--main-font);
   line-height: 1.87; /* 187.5% */
   letter-spacing: 0.96px;
+  font-weight: 700;
+
+  background-color: var(--accent-text-color);
+  border-radius: 4px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 
   cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
-  background-color: #058eff;
+  background-color: #2196f3;
 }
 
 /* Advantages */
+.advantages-list {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages-item {
+  max-width: 270px;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-subtitle {
+  margin-bottom: 10px;
+
   font-size: 14px;
   letter-spacing: 0.42px;
   text-transform: uppercase;
@@ -104,8 +210,44 @@ span {
   letter-spacing: 0.42px;
 }
 
+/* work */
+.work {
+  padding-bottom: 94px;
+}
+.work-list {
+  display: flex;
+}
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* team */
+.team {
+  background-color: var(--second-background-color);
+}
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.team-list-item {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--white-text-color);
+
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.inner-wrapper {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-list-title {
+  margin-bottom: 10px;
+
   font-weight: 500;
   letter-spacing: 0.48px;
 }
@@ -116,6 +258,8 @@ span {
 
 /* footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--background-color);
 }
 .footer-link {
@@ -124,6 +268,12 @@ span {
   font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.78px;
+}
+.address {
+  margin-top: 20px;
+}
+.address-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-list-desc {
   color: var(--white-text-color);
