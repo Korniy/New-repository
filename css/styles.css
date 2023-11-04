@@ -132,7 +132,15 @@ img {
 .header-list-item:not(:last-child) {
   margin-right: 50px;
 }
+.header-icon {
+  margin-right: 10px;
+
+  fill: currentColor;
+}
 .header-list-link {
+  display: flex;
+  align-items: center;
+
   color: var(--second-text-color);
   font-size: 14px;
   font-weight: 500;
@@ -148,7 +156,12 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+
   background-color: var(--background-color);
+  background-image: url('../images/mountains_forest.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero-title {
   margin-bottom: 30px;
@@ -190,15 +203,23 @@ img {
   display: flex;
   justify-content: center;
 }
-
 .advantages-item {
   max-width: 270px;
 }
-
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
+.advantages-wrapper {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 270px;
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
 
+  background-color: var(--second-background-color);
+}
 .advantages-subtitle {
   margin-bottom: 10px;
 
@@ -258,6 +279,36 @@ img {
   color: var(--second-text-color);
   letter-spacing: 0.48px;
 }
+.team-sublist {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 16px;
+}
+.team-subitem:not(:last-child) {
+  margin-right: 10px;
+}
+.team-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+.team-link:hover,
+.team-link:focus {
+  background-color: var(--accent-text-color);
+}
+.team-link:hover .team-icon,
+.team-link:focus .team-icon {
+  fill: var(--white-text-color);
+}
+.team-icon {
+  fill: #afb1b8;
+}
+/* clients */
 
 /* footer */
 .footer {
