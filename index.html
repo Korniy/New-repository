@@ -35,8 +35,10 @@
         <!-- Навігація -->
         <nav class="nav">
           <ul class="nav-list">
-            <li class="nav-item"><a href="/" class="nav-link">Студія</a></li>
-            <li class="nav-item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+            <li class="nav-item"><a href="/" class="nav-link current">Студія</a></li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-link">Портфоліо</a>
+            </li>
             <li class="nav-item"><a href="/" class="nav-link">Контакти</a></li>
           </ul>
         </nav>
@@ -134,31 +136,46 @@
           <h2 class="work-title title">Чим ми займаємося</h2>
           <ul class="work-list">
             <li class="work-list-item">
-              <img
-                src="./images/заглушка.jpg"
-                class="work-list-img"
-                alt="Робота з клавіатурою"
-                width="370"
-                height="294"
-              />
+              <div class="work-wrapper-img">
+                <img
+                  src="./images/Rainfall-in-the-Arctic-370x294.jpg"
+                  class="work-list-img"
+                  alt="Робота з клавіатурою"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-inner-img">
+                  <p class="work-text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="work-list-item">
-              <img
-                src="./images/заглушка.jpg"
-                class="work-list-img"
-                alt="Робота з ноутбуком"
-                width="370"
-                height="294"
-              />
+              <div class="work-wrapper-img">
+                <img
+                  src="./images/Rainfall-in-the-Arctic-370x294.jpg"
+                  class="work-list-img"
+                  alt="Робота з клавіатурою"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-inner-img">
+                  <p class="work-text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="work-list-item">
-              <img
-                src="./images/заглушка.jpg"
-                class="work-list-img"
-                alt="Робота з плагшетом"
-                width="370"
-                height="294"
-              />
+              <div class="work-wrapper-img">
+                <img
+                  src="./images/Rainfall-in-the-Arctic-370x294.jpg"
+                  class="work-list-img"
+                  alt="Робота з клавіатурою"
+                  width="370"
+                  height="294"
+                />
+                <div class="work-inner-img">
+                  <p class="work-text">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -171,7 +188,7 @@
           <ul class="team-list">
             <li class="team-list-item">
               <img
-                src="./images/заглушка.jpg"
+                src="./images/Rainfall-in-the-Arctic-370x294.jpg"
                 class="team-list-img"
                 alt="Фото члена команди"
                 width="270"
@@ -214,7 +231,7 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/заглушка.jpg"
+                src="./images/Rainfall-in-the-Arctic-370x294.jpg"
                 class="team-list-img"
                 alt="Фото члена команди"
                 width="270"
@@ -257,7 +274,7 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/заглушка.jpg"
+                src="./images/Rainfall-in-the-Arctic-370x294.jpg"
                 class="team-list-img"
                 alt="Фото члена команди"
                 width="270"
@@ -300,7 +317,7 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/заглушка.jpg"
+                src="./images/Rainfall-in-the-Arctic-370x294.jpg"
                 class="team-list-img"
                 alt="Фото члена команди"
                 width="270"
@@ -393,6 +410,17 @@
           </li>
         </ul>
       </section>
+
+      <!-- Модальне вікно-->
+      <div class="backdrop">
+        <div class="modal">
+          <button type="button" class="modal-btn">
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
 
     <!-- Підвал -->
