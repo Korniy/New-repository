@@ -484,6 +484,14 @@ img {
   height: 100%;
   background-color: rgba(192, 192, 192, 0.5);
 }
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
 .modal {
   position: absolute;
   top: 50%;
@@ -492,7 +500,8 @@ img {
   min-width: 528px;
   min-height: 581px;
 
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 500ms var(--main-cubic);
 
   border-radius: 4px;
   background-color: var(--white-text-color);
@@ -502,6 +511,7 @@ img {
 .modal-btn {
   display: flex;
   align-items: center;
+  padding: 6px;
   margin-left: auto;
   margin-top: 8px;
   margin-right: 8px;
@@ -556,11 +566,39 @@ img {
   /* flex-basis: calc((100% - 6 * 15px) / 3);
   margin: 15px; */
   width: calc((100% - 2 * 30px) / 3);
+
+  transition: box-shadow 250ms var(--main-cubic);
 }
 .portfolio-subitem:hover,
 .portfolio-subitem:focus {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
     0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.portfolio-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  height: 100%;
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: 250ms transform var(--main-cubic);
+
+  color: var(--white-text-color);
+  font-size: 18px;
+  line-height: 1.55; /* 155.556% */
+  letter-spacing: 0.54px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+}
+.portfolio-subitem:hover .overlay-text,
+.portfolio-subitem:focus .overlay-text {
+  transform: translateY(0%);
 }
 .portfolio-wrapper {
   padding: 20px 24px;
