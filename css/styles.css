@@ -407,6 +407,7 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 .footer-link {
   color: var(--white-text-color);
@@ -475,6 +476,78 @@ img {
 .footer-sublink:focus {
   background-color: var(--accent-text-color);
 }
+.form {
+  margin-left: 93px;
+}
+.form-text {
+  margin-bottom: 20px;
+
+  color: var(--white-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.form-input {
+  min-width: 358px;
+  min-height: 50px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 0;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+
+  transition: border-color 250ms var(--main-cubic);
+}
+.form-input:focus-within {
+  border-color: var(--accent-text-color);
+}
+.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  line-height: 1.25; /* 125% */
+  letter-spacing: 0.48px;
+}
+.form-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px; */
+  margin-left: 12px;
+  min-width: 200px;
+  min-height: 50px;
+
+  color: var(--white-text-color);
+  font-weight: 700;
+  line-height: 1.87; /* 187.5% */
+  letter-spacing: 0.96px;
+
+  border-radius: 4px;
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+  cursor: pointer;
+
+  transition: background-color 250ms var(--main-cubic);
+}
+.form-btn:hover,
+.form-btn:focus {
+  background-color: #157cd1;
+}
+.form-icon {
+  margin-left: 10px;
+}
+
+/* Модальне вікно */
 .backdrop {
   position: fixed;
   top: 0;
@@ -497,6 +570,7 @@ img {
   top: 50%;
   left: 50%;
 
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
 
@@ -509,12 +583,16 @@ img {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .modal-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
   display: flex;
   align-items: center;
   padding: 6px;
-  margin-left: auto;
+  /* margin-left: auto;
   margin-top: 8px;
-  margin-right: 8px;
+  margin-right: 8px; */
   width: 30px;
   height: 30px;
 
@@ -523,6 +601,14 @@ img {
   background-color: transparent;
 
   cursor: pointer;
+}
+.modal-title {
+  margin-bottom: 12px;
+
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
 }
 
 /* Portfolio */
