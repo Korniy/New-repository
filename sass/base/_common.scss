@@ -1,0 +1,51 @@
+body {
+  font-family: var(--main-font);
+  color: var(--main-text-color);
+}
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+span {
+  color: var(--accent-text-color);
+}
+img {
+  display: block;
+  /* max-width: 100%;
+  height: auto; */
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.title {
+  margin-bottom: 50px;
+
+  text-align: center;
+  font-size: 36px;
+  letter-spacing: 1.08px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* Flex-basis(width): calc((100% - к-сть марджинів в рядку * значення марджину) / к-сть элементів в рядку); */

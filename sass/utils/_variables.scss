@@ -1,0 +1,20 @@
+:root {
+  /* Шрифти Google fonts */
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+
+  /* Основний колір тексту */
+  --main-text-color: #212121;
+  /* Другорядний колір тексту */
+  --second-text-color: #757575;
+  /* Білий колір тексту*/
+  --white-text-color: #ffffff;
+  /* Колір акценту */
+  --accent-text-color: #2196f3;
+  /* Колір фону */
+  --background-color: #2f303a;
+  --second-background-color: #f5f4fa;
+
+  /* Кубік */
+  --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
+}
