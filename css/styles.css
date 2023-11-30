@@ -198,6 +198,7 @@ img {
   letter-spacing: 2.64px;
   text-transform: uppercase;
 }
+
 .hero-btn {
   display: inline-block;
   min-width: 216px;
@@ -219,10 +220,11 @@ img {
 
   cursor: pointer;
 }
-.hero-btn:hover,
+
+/* .hero-btn:hover,
 .hero-btn:focus {
   background-color: #157cd1;
-}
+} */
 
 /* Advantages */
 .advantages-list {

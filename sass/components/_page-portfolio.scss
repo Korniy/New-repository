@@ -1,0 +1,99 @@
+/* Portfolio */
+
+.page-portfolio__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.page-portfolio__item:not(:last-child) {
+  margin-right: 8px;
+}
+.page-portfolio__btn {
+  display: inline-block;
+  padding: 6px 22px;
+
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62; /* 162.5% */
+  letter-spacing: 0.48px;
+  background-color: var(--second-background-color);
+
+  transition: background-color 250ms var(--main-cubic), color 250ms var(--main-cubic);
+
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+  }
+}
+
+.page-portfolio__sublist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  /* margin: -15px; */
+}
+.page-portfolio__subitem {
+  /* flex-basis: calc((100% - 6 * 15px) / 3);
+  margin: 15px; */
+  width: calc((100% - 2 * 30px) / 3);
+
+  transition: box-shadow 250ms var(--main-cubic);
+
+  &:hover,
+  &:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  }
+
+  &:hover .page-portfolio__text,
+  &:focus .page-portfolio__text {
+    transform: translateY(0%);
+  }
+}
+.page-portfolio__overlay {
+  position: relative;
+  overflow: hidden;
+}
+.page-portfolio__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  height: 100%;
+  padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: 250ms transform var(--main-cubic);
+
+  color: var(--white-text-color);
+  font-size: 18px;
+  line-height: 1.55; /* 155.556% */
+  letter-spacing: 0.54px;
+
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.page-portfolio__wrapper {
+  padding: 20px 24px;
+
+  border: 1px solid #eee;
+  border-top: none;
+  background-color: var(--white-text-color);
+}
+.page-portfolio__subtitle {
+  color: var(--main-text-color);
+  font-size: 18px;
+  line-height: 2; /* 200% */
+  letter-spacing: 1.08px;
+}
+.page-portfolio__desc {
+  color: var(--second-text-color);
+  line-height: 1.87; /* 187.5% */
+  letter-spacing: 0.48px;
+}

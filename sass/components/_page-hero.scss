@@ -1,0 +1,50 @@
+/* Hero */
+
+.page-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
+  background-color: var(--background-color);
+  background-image: url('../images/mountains_forest.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.page-hero__title {
+  margin-bottom: 30px;
+
+  color: var(--white-text-color);
+  text-align: center;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36; /* 136.364% */
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+}
+.page-hero__btn {
+  display: inline-block;
+  min-width: 216px;
+  min-height: 50px;
+  padding: 8px 29px;
+
+  color: var(--white-text-color);
+  font-family: var(--main-font);
+  line-height: 1.87; /* 187.5% */
+  letter-spacing: 0.96px;
+  font-weight: 700;
+
+  background-color: var(--accent-text-color);
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms var(--main-cubic);
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: #157cd1;
+  }
+}
