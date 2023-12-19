@@ -31,7 +31,28 @@
 
     <header class="page-header">
       <div class="container page-header__flex">
-        <a href="/" class="logo"><span>Web</span>Studio</a>
+        <!-- Кнопка мобільного меню -->
+        <div class="mobile-burger">
+          <a href="/" class="logo"><span>Web</span>Studio</a>
+
+          <button
+            type="button"
+            class="mobile-burger__btn is-open"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="mobile-overlay"
+          >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="mobile-burger__menu" href="./images/burger.svg#burger"></use>
+              <use class="mobile-burger__close" href="./images/burger-close.svg#burger-close"></use>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Мобільне меню -->
+        <div class="mobile-overlay" id="mobile-overlay" data-menu>
+          <div class="mobile-menu"></div>
+        </div>
 
         <!-- Навігація -->
         <nav class="nav">
@@ -550,6 +571,7 @@
     </footer>
 
     <!-- Скрипт модального вікна -->
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
